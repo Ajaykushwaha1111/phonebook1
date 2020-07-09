@@ -1,0 +1,16 @@
+
+
+
+class Myrecord(models.Model):
+    title =models.CharField(max_length=100)
+    desc=models.TextField()
+
+python manage.py makemigrations # for generate schema
+python manage.py migrate # for convert schema to table
+python manage.py createsuperuser
+username :admin
+password :admin
+
+if u want to show table or Record and manage also
+go to admin.py
+and register your model here
